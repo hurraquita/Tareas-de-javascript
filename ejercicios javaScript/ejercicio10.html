@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #boton{
+            margin-left: 20px;
+        }
+        .circulo {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+            background-color: lightgray;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="verde" class="circulo"></div>
+    <div id="amarillo" class="circulo"></div>
+    <div id="rojo" class="circulo"></div>
+    <button id="boton">Next</button>
+</body>
+<script>
+let contador = 0;
+boton.addEventListener("click", Cambiazo);
+function Cambiazo() {
+contador++;
+
+if(contador == 1){
+    verde.style.backgroundColor ="green";
+    verde.style.opacity = "1";
+    amarillo.style.backgroundColor ="lightgray";
+    rojo.style.backgroundColor ="lightgray";
+}
+
+if(contador == 2){
+    amarillo.style.backgroundColor ="yellow";
+    amarillo.style.opacity = "1";
+    rojo.style.backgroundColor ="lightgray";
+    verde.style.backgroundColor ="lightgray";
+}
+
+if(contador == 3){
+    rojo.style.backgroundColor ="red";
+    rojo.style.opacity = "1";
+    amarillo.style.backgroundColor ="lightgray";
+    verde.style.backgroundColor ="lightgray";
+}
+contador=(contador)%3;
+}
+</script>
+</html>

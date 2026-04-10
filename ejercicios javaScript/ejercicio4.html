@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+  </head>
+  <body>
+    <header>
+      <button id="boton">Pulsame de nuevo</button>
+      <p id="result">Mira se mostrar la hora</p>
+    </header>
+    <script>
+      const ahora = new Date();
+      const hora = ahora.toLocaleTimeString();
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("result");
+      boton.addEventListener("click", cambiarHora);
+      function cambiarHora() {
+        resultado.innerHTML = hora;
+      }
+    </script>
+  </body>
+</html>

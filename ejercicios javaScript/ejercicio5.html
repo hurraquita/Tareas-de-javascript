@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+  </head>
+  <body>
+    <header>
+      <button id="boton">Escribe primero</button>
+      <input type="text" placeholder="Escribe aqui tu nombre" id="name" />
+      <p id="result">Aqui ira tu nombre</p>
+    </header>
+    <script>
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("result");
+      boton.addEventListener("click", escribirNombre);
+      function escribirNombre() {
+        const input = document.getElementById("name");
+        let valor = input.value;
+        resultado.innerHTML = "¡Hola, " + valor + "!";
+      }
+    </script>
+  </body>
+</html>

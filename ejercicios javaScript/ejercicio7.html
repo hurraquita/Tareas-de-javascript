@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+  </head>
+  <body>
+    <header>
+      <button id="boton">No me ves</button>
+      <p id="result">
+       Nunca me encontraras
+      </p>
+    </header>
+    <script>
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("result");
+      let visible = true;
+      boton.addEventListener("click", hacerInvisible);
+      function hacerInvisible() {
+        if (visible) {
+          resultado.style.display = "none";
+          boton.innerHTML = "Ahora si";
+          visible = false;
+        } else {
+          resultado.style.display = "block";
+          boton.innerHTML = "No me ves";
+          visible = true;
+        }
+      }
+    </script>
+  </body>
+</html>

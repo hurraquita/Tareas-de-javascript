@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <header>
+      <button id="boton">Pulsame mas</button>
+      <p id="result">Me Sonrojo</p>
+    </header>
+    <script>
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("result");
+      boton.addEventListener("click", cambiarColor);
+      function cambiarColor() {
+        document.getElementById("result").style.color = "red";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <input id="Tarea" required type="text" name="busqueda" Placeholder="Nueva tarea...">
+        <button value="Añadir" onclick="aumentarLista()">Añadir</button>
+        <ul id="lista"></ul>
+</body>
+<script>
+    let listaTareas = []
+
+function aumentarLista() {
+const texto = document.getElementById("Tarea")
+const lista = document.getElementById("lista")
+lista.innerHTML += "<li>" + texto.value + "</li>"
+}
+function renderizarLista() {
+const texto = document.getElementById("Tarea")
+for (let i = 0; i < listaTareas.length;i++){
+    lista.innerHTML += "<li>" + texto.value+"</li >"
+}
+}
+</script>
+</html>

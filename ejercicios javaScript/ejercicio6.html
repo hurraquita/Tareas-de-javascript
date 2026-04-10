@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+  </head>
+  <body>
+    <header>
+      <input type="number" placeholder="0" id="num1" />
+      <input type="number" placeholder="0" id="num2" />
+      <button id="boton">Boton matematico</button>
+      <p id="result">Yo mostrare el resultado</p>
+    </header>
+    <script>
+      let boton = document.getElementById("boton");
+      let resultado = document.getElementById("result");
+      boton.addEventListener("click", sumarNumeros);
+      function sumarNumeros() {
+        const a = Number(document.getElementById("num1").value);
+        const b = Number(document.getElementById("num2").value);
+        let suma = a + b;
+        resultado.innerHTML = "La suma es: " + suma;
+      }
+    </script>
+  </body>
+</html>
